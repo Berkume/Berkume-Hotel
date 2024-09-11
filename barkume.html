@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="x-UA-Compatible" content="ie=edge">
+    <meta name="description" content="Welcome To Berkume Hotel">
+     <meta name="keywords" content="hotel, barkume">
+     
+     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+     <link rel="stylesheet" href="style.css">
+    <title></title>
+</head>
+<body>
+    <header>
+        <nav id="navbar">
+            <div class="container">
+               
+                <h1 class="log"><a href="barkume.html"></a><span class="am"> <i class="fas fa-hotel fa-2x"></i><br>በርኩሜ</span> ሆቴል<span class="logo"></span><br>Berkume<span class="logo"><Berkume</span> Hotel</h1>   
+         <ul>
+            <li><a class="current" href="barkume.html">Home</a></li>
+            <li><a href="About.html">About</a></li>
+            <li><a href="Contact.html">Contact</a></li>
+            <li><a href="service.html">Service</a></li>
+            <label for="language">Choose a language:</label>
+            <select id="language" onchange="changeLanguage()">
+                <option value="en">English</option>
+                <option value="om">Afan Oromo</option>
+                <option value="am">Amharic</option>
+                <option value="ti">Tigrinya</option>
+                <option value="aa">Afan Afar</option>
+            </select>
+            
+            
+            
+            <script>
+                const translations = {
+                    en: {
+                        header: "Select Your Language",
+                        description: "This is a sample description."
+                    },
+                    om: {
+                        header: "Afaan Oromoo Filadhu",
+                        description: "Kun ibsa fakkeenya."
+                    },
+                    am: {
+                        header: "ቋንቋዎን ይምረጡ",
+                        description: "ይህ የአንዳንድ መግለጫ ነው።"
+                    },
+                    ti: {
+                        header: "ቋንቋይን ምረጽ",
+                        description: "እዚ እዚ መልእኽቲ እዩ።"
+                    },
+                    aa: {
+                        header: "Afaan Afar Filadhu",
+                        description: "Kuni ibsa fakkeenya."
+                    }
+                };
+            
+                function changeLanguage() {
+                    const languageSelect = document.getElementById('language');
+                    const selectedLanguage = languageSelect.value;
+            
+                    // Update the text on the page based on the selected language
+                    document.getElementById('header').innerText = translations[selectedLanguage].header;
+                    document.getElementById('description').innerText = translations[selectedLanguage].description;
+                }
+            </script>
+                
+            </span>
+         </ul>
+        
+            </div>
+            
+        </nav>
+    
+
+        <div id="showcase">
+            <div class="container">
+                <div class="showcase-content">
+                    <h1><span class="text">WELCOME</span> TO Berkume HOTEL</h1>                    
+                    <h2><span class="text">Enjoy</span> Your Stay በርኩ</h2>
+                    <p class="lead">Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas facere deserunt possimus obcaecati aspernatur pariatur atque debitis, eveniet, unde harum, velit ut praesentium dolor dolorem similique quis assumenda. Porro, modi!</p>
+            
+            
+                </div>
+                
+            </div>
+                </div>
+            </header>
+            <Section id="home-info" class="bg-dark">
+    <div class="info-img"></div>
+    <div class="info-content">
+        <h1>The History<span class="nb"> Of በርኩሜ ሆቴል </span></h1>
+        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Incidunt itaque quidem sapiente, minus sim ea soluta qui repellat eum voluptas voluptatem quo ratione! Quidem reiciendis voluptas, soluta facere alias enim velit, voluptatibus at ut, commodi voluptates. Aliquam repellat corporis reprehenderit, eve
+            
+            
+            niet cum laudantium accusantium a culpa accusamus blanditiis iusto, possimus, distinctio impedit suscipit voluptatibus. Placeat ad animi rerum debitis ab nam, sequi alias?</p>
+        <a href="about.html" class="nv">Read More➡️ቀጥል </a>
+    </div>
+</section>
+    
+                <section id="features">
+                    <div class="box bg-light">
+                        
+                        <h3><i class="fas fa-hotel fa-3x"></i><br>Great Location</h3>
+                        
+                        <p>Loreprehenderitero quas delectus soluta quasi assumenda? Nam, provident?</p>
+                
+                    </div>
+                    <div class="box bg-primary"><h3> <i class="fas fa-order"></i><br>Order Now</h3>
+                    
+                    <p>Loremtationeporis pariatur ad, earum consequuntur mollitia voluptatem.</p>
+                
+                    </div>
+                    <div class="box bg-light"><h3><i class="fas fa-butcher"></i><br>Delivary Meal</h3>
+                    <p>Lort tempoe repudiandae voluptatum dolores dolorum officia odio quae, quos autem fugiat beatae saepe porro.</p>
+                </div>
+               
+                </section>
+                ,
+               <footer id="main-footer">
+                <p>Berkume Hotel &copy, All Reserved</p>
+                </footer>
+                
+    
+           
+</body>
+ 
+</html>
